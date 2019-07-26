@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Brief intro to flutter</title>
+		
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<link rel="icon" href="assets/ic_launcher.png">
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Brief intro to flutter</h2>
+					<p>By: Suraj Jagtap</p>
+					<a href="https://twitter.com/surajdjagtap" target="_blank">@surajdjagtap</a></a>
+				</section>
+				<section>
+					<h3>Agenda</h3>
+					<ol>
+						<li>Native Development</li>
+						<li>React Native</li>
+						<li>Flutter</li>
+						<li>Demo</li>
+					</ol>
+				</section>
+				<section>
+					<section>
+						<h3>Android app compilation</h3>
+						<br/>
+						<img src="./assets/java-to-class.png"/>
+						<p>Java source is compiled into .class files.</p>
+						<aside class="notes">
+							<ul>
+								<li>Show android source.</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<img src="./assets/class-to-dex.png"/>
+						<p>.class and .jar files are compiled into single .dex file.</p>
+					</section>
+					<section>
+						<img src="./assets/dex-to-apk.png"/>
+						<p>classes.dex and resource files are<br/> compiled into .apk file.</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>React Native</h3>
+						<div data-snack-id="@jsuraj/209531" data-snack-platform="web" data-snack-preview="true" data-snack-theme="dark" style="overflow:hidden;background:#212733;border:1px solid rgba(0,0,0,.08);border-radius:4px;height:505px;width:100%"></div>
+						<script async src="https://snack.expo.io/embed.js"></script>
+						<aside class="notes">
+							<ul>
+								<li>Open Source</li>
+								<li>Facebook</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<h3>How RN app runs</h3>
+						<img src="./assets/rn-architecture.png"/>
+					</section>
+				</section>
+				<section>
+					<section>
+					<a href="https://hermesengine.dev/" target="_blank">Hermes</a>
+					<blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">
+						Did someone say they wanted to try out <a href="https://twitter.com/HermesEngine?ref_src=twsrc%5Etfw">@HermesEngine</a> ? Well, there is a build of the
+						<a href="https://twitter.com/ChainReactConf?ref_src=twsrc%5Etfw">@ChainReactConf</a>  conference app, running on new engine !!
+						<a href="https://t.co/gYsBEY8WRd">pic.twitter.com/gYsBEY8WRd</a></p>&mdash; Parashuram (@nparashuram) <a href="https://twitter.com/nparashuram/status/1149359709943500800?ref_src=twsrc%5Etfw">July 11, 2019</a>
+					</blockquote>
+					</section>
+					<section>
+					<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">
+						Curious how I got the numbers for <a href="https://twitter.com/mhorowitz?ref_src=twsrc%5Etfw">@mhorowitz</a>&#39;s keynote at <a href="https://twitter.com/ChainReactConf?ref_src=twsrc%5Etfw">@ChainReactConf</a>
+						?<br>Check this out - <a href="https://t.co/y0IYAkFXai">https://t.co/y0IYAkFXai</a>. You can also run these experiments to look at the results. <a href="https://t.co/Am2doDSeWj">pic.twitter.com/Am2doDSeWj</a>
+						</p>&mdash; Parashuram (@nparashuram) <a href="https://twitter.com/nparashuram/status/1151542327908765697?ref_src=twsrc%5Etfw">July 17, 2019</a>
+					</blockquote>
+					</section>
+					<section>
+						<h5>Learn once, write everywhere</h5>
+						<a href="https://github.com/jondot/awesome-react-native#other-platforms" target="_blank">React Native support</a>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Fluttter</h3>
+						<ul id="fragments">
+							<li class="fragment">
+								Flutter is Google’s portable UI toolkit for building beautiful, natively-compiled applications for mobile, web, and desktop from a single codebase.
+							</li>
+							<li class="fragment">
+								Flutter includes a modern react-style framework, a 2D rendering engine, ready-made widgets, and development tools.
+							</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Dart</h3>
+						<p>
+							Dart runtimes and compilers support the combination of two critical features for Flutter:
+							a JIT-based fast development cycle that allows for shape changing and stateful hot reloads
+							in a language with types, plus an Ahead-of-Time compiler that emits efficient ARM code for
+							fast startup and predictable performance of production deployments.
+						</p>
+						<aside class="notes">
+							<ul>
+								<li>Google Analytics</li>
+								<li>For the web</li>
+								<li>Angular dart</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+							<h3>Hello World in flutter</h3>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Core Principles</h3>
+						<ul id="fragments">
+							<li class="fragment">
+								Everything’s a Widget
+							</li>
+							<li class="fragment">
+								Composition > inheritance
+							</li>
+						</ul>
+						<aside class="notes">
+							<ul>
+								<li>a structural element (like a button or menu)</li>
+								<li>a stylistic element (like a font or color scheme)</li>
+								<li>an aspect of layout (like padding)</li>
+								<li>and so on</li>
+								<li>Widgets are themselves often composed of many small, single-purpose widgets that combine to produce powerful effects</li>
+							</ul>
+						</aside>
+					</section>
+					<section data-background-iframe="https://flutter.dev/docs/resources/platform-adaptations#adaptation-philosophy" data-background-interactive>
+						<!-- <h3>
+							<a href="https://flutter.dev/docs/resources/platform-adaptations#adaptation-philosophy"
+							target="_blank">
+							Platform specific behaviors and adaptations
+							</a>
+						</h3> -->
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Widget Catalogue</h3>
+					</section>
+					<section data-background-iframe="https://flutter.dev/docs/reference/widgets" data-background-interactive>
+					</section>
+				</section>
+				<section>
+					<h3>Architecture</h3>
+					<img src="./assets/flutter_overview.svg"/>
+				</section>
+				<section>
+					<h3>Plugins</h3>
+					<p>
+						Flutter supports using shared packages contributed by other developers to the Flutter and Dart ecosystems.
+						This allows quickly building an app without having to develop everything from scratch.
+					</p>
+					<a href="https://github.com/flutter/plugins/tree/master/packages/camera" target="_blank">Camera plugin</a>
+				</section>
+				<section>
+					<h3>Flutter Vs React Native</h3>
+					<ul id="fragments">
+						<li class="fragment">Declarative UI</li>
+						<li class="fragment">Hot Reload</li>
+						<li class="fragment">Package Ecosystem</li>
+						<li class="fragment">Use of OEM Widgets</li>
+						<li class="fragment">Component Library</li>
+						<li class="fragment">Performance</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Imperative programming like in manual dom manipulation</li>
+							<li>Blueprint</li>
+							<li>Flutter has stateful hot reload</li>
+							<li>npmjs pub.dev</li>
+							<li>Flutter has build in support for Material and Cupertino</li>
+							<li>Flutter apps are AOT compiled, faster startup time</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h3>Demo</h3>
+				</section>
+				<section>
+					<h3>One more Demo</h3>
+				</section>
+				<section>
+					<h3>One Last Demo</h3>
+				</section>
+			</div>			
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+			Reveal.configure({ slideNumber: 'h.v' });
+		</script>
+		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</body>
+</html>
